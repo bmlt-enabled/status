@@ -237,7 +237,7 @@
 
     (async () => {
         const tomatoServersData = await fetchJson(
-            "https://raw.githubusercontent.com/bmlt-enabled/tomato/master/rootServerList.json"
+            "https://raw.githubusercontent.com/bmlt-enabled/aggregator/main/rootServerList.json"
         );
         tomatoServersData.sort(function (a, b) {
             a = a.name.toLowerCase();

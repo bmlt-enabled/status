@@ -237,7 +237,7 @@
 
     (async () => {
         const tomatoServersData = await fetchJson(
-            "https://raw.githubusercontent.com/bmlt-enabled/aggregator/main/rootServerList.json"
+            "https://raw.githubusercontent.com/bmlt-enabled/aggregator/main/serverList.json"
         );
         tomatoServersData.sort(function (a, b) {
             a = a.name.toLowerCase();
@@ -258,7 +258,7 @@
         for (let i = 0; i < tomatoServersData.length; i++) {
             option = document.createElement('option');
             option.text = tomatoServersData[i].name;
-            option.value = tomatoServersData[i].rootURL;
+            option.value = tomatoServersData[i].url;
             dropdown.add(option);
         }
     })();
